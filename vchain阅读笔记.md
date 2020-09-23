@@ -38,46 +38,6 @@
 安全分析
 
 **9. PERFORMANCE EVALUATION**  
-in 阅读笔记
-
-## 阅读过程
-    
-### 过程记录
-
-**0. Abstract:**  
-    首先调研基于数据库的可验证查询过程的处理问题. In this paper, we take thefirst step toward investigating the problem of verifiable queryprocessing over blockchain databases.   
-    作者提出了一个基于累加的权限认证数据结构,该数据结构允许基于任意查询属性的动态聚合;为了更高效的查询验证, 两个新的索引被进一步开发来完成区块内部和区块外部的数据记录聚合.   
-    作者还提出了倒转前缀树的结构来加速大量的订阅查询数据的并行处理速度
-
-**1. Introduction**  
-    有需求,先前的工作主要还是基于可信第三方来执行查询操作;  完整性验证
-    对于轻节点来说将查询交给全节点来做, 情节点接受结果即可; 一个重要的事情在于验证结果的完整性
-    做法: 每个区块中新增授权数据结构--->构建加密证明--->验证 验证物体(verification object)
-    
-**2. REALTED WORK**  
-    验证数据结构ADS authenticated data structure和可验证的物体VO verifiable object的提出有赖于先前的工作
-
-**3. PROBLEM DEFINITION**  
-    最终的问题导向设计合理的ADS方法和简要介绍了时间窗口查询和订阅查询的工作方式
-
-**4. PRELIMINARIES**  
-    哈希函数
-    双线性配对
-    密码学超集累加器
-
-**5. BAISC SOLUTION**  
-主要方法介绍
-
-**6. BATCH VERIFICATION**  
-验证时间范围方法
-
-**7. VERIFIABLE SUBSCRIPTION QUERIES** 
-验证订阅方法
-
-**8. SECURITY ANALYSIS**  
-安全分析
-
-**9. PERFORMANCE EVALUATION**  
 性能分析
 
 **10. CONCOLUSION**  
